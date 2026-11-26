@@ -1,0 +1,10 @@
+{
+  "test_id": "NT-3",
+  "executed_at": "2026-10-29T17:48:26.144787+00:00",
+  "fixture_id": "cost-scale-accept-20261029T174656Z",
+  "expected": "Projected spend is checked before scale-up.",
+  "observed": "No captured pricing snapshot is available.",
+  "recovery": "Run python experiments/capture_pricing.py with AWS credentials that allow pricing:GetProducts.",
+  "residual_risk": "No cost claim should be published until pricing is captured.",
+  "status": "HOLD"
+}

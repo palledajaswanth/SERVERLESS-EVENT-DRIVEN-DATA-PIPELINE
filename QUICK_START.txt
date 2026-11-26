@@ -1,0 +1,28 @@
+SERVERLESS EVENT-DRIVEN DATA PIPELINE - WINDOWS QUICK START
+
+1) Extract the ZIP and open the folder in VS Code.
+2) Open a PowerShell terminal.
+3) Configure/authenticate AWS locally (DO NOT put secrets in project files):
+
+   aws configure
+   aws sts get-caller-identity
+
+4) First-time setup:
+
+   .\scripts\bootstrap.ps1 -InstallMissing
+
+5) Run the full project end-to-end:
+
+   .\scripts\full_run.ps1
+
+6) Open the analytics dashboard:
+
+   .\scripts\run_dashboard.ps1
+
+7) When the demo/experiment is finished, remove project AWS resources:
+
+   .\scripts\destroy.ps1 -AutoApprove
+
+Alternative: use FIRST_TIME_SETUP.bat, RUN_PROJECT.bat, RUN_DASHBOARD.bat and DESTROY_AWS.bat.
+
+See README.md for architecture, evidence, tests, costs and troubleshooting.

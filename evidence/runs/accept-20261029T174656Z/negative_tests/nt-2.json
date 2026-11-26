@@ -1,0 +1,17 @@
+{
+  "test_id": "NT-2",
+  "executed_at": "2026-10-29T17:48:25.867245+00:00",
+  "fixture_id": "vendor-portability-accept-20261029T174656Z",
+  "precondition": "Primary endpoint is deliberately unreachable; event schema remains vendor-neutral JSON.",
+  "expected": "Client fails closed into a durable local outbox, replays the exact event after recovery, and a duplicate replay does not create a second S3 object version.",
+  "observed": {
+    "outbox_created": true,
+    "replay_http_status": 202,
+    "stored": true,
+    "s3_object_versions_after_duplicate_replay": 1
+  },
+  "recovery_time_seconds": 17.371,
+  "recovery": "Replay JSONL outbox to the restored AWS API endpoint (or the protocol-compatible local baseline).",
+  "residual_risk": "Infrastructure remains AWS-specific; portability demonstrated here is at the event contract/client replay boundary, not zero-effort cloud migration.",
+  "status": "PASS"
+}

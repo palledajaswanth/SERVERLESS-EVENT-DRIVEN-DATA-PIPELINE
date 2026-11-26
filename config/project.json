@@ -1,0 +1,14 @@
+{
+  "project_name": "serverless-event-pipeline",
+  "aws_region": "ap-south-1",
+  "seed": 20260919,
+  "default_events": 500,
+  "default_concurrency": 25,
+  "saturation_concurrency": [1, 5, 10, 25, 50, 100],
+  "cold_start_trials": 30,
+  "s3_retention_days": 90,
+  "cost_guardrail_usd": 50.0,
+  "cost_projection_events": 10000000,
+  "baseline_instance_type_for_cost_model": "t3.micro",
+  "notes": "Performance is measured. Always-on baseline cost is modelled against a declared EC2 instance price snapshot; serverless cost is estimated from measured invocation/duration metrics and captured AWS pricing."
+}

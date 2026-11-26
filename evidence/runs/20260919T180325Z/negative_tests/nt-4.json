@@ -1,0 +1,19 @@
+{
+  "test_id": "NT-4",
+  "executed_at": "2026-10-29T17:59:27.372769+00:00",
+  "fixture_id": "partition-quality-nt4-retest-20261029",
+  "precondition": {
+    "healthy_events": 20,
+    "defective_partition_events": 3
+  },
+  "expected": "Invalid partition records are not silently committed; deterministic quality failures are sent directly to the DLQ while transient failures remain retryable.",
+  "observed": {
+    "dlq_before": 3,
+    "dlq_after": 6,
+    "new_dlq_messages": 3,
+    "defective_partition_detected": true
+  },
+  "recovery": "Inspect DLQ fixture IDs, correct data, then replay only remediated records.",
+  "residual_risk": "Approximate SQS counts are eventually consistent; publication runs should retain CloudWatch/log evidence as well.",
+  "status": "PASS"
+}

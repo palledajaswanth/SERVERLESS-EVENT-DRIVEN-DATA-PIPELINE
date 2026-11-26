@@ -1,0 +1,1 @@
+{"event_id":"nt4-retest-20261029-good-17","event_timestamp":"2026-10-29T17:58:47.509299+00:00","event_type":"healthy","processed_at":"2026-10-29T17:59:10.234541+00:00","processor_request_id":"e3b0c55f-ecee-536d-8d60-a6026768e63c","received_at":"2026-10-29T17:58:47.509315+00:00","schema_version":"1.0","source":"nt4","value":17.0}

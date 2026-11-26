@@ -1,0 +1,9 @@
+services:
+  baseline:
+    build: ./baseline
+    container_name: serverless-pipeline-baseline
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./baseline/data:/data
+    restart: unless-stopped

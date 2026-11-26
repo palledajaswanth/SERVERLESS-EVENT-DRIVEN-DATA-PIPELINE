@@ -1,0 +1,31 @@
+{
+  "total_events": 74,
+  "by_type": [
+    {
+      "event_type": "healthy",
+      "count": 40,
+      "avg_value": 9.5
+    },
+    {
+      "event_type": "cold-start",
+      "count": 30,
+      "avg_value": 14.5
+    },
+    {
+      "event_type": "sensor",
+      "count": 2,
+      "avg_value": 100.0
+    },
+    {
+      "event_type": "portability",
+      "count": 1,
+      "avg_value": 42.0
+    },
+    {
+      "event_type": "test",
+      "count": 1,
+      "avg_value": 100.0
+    }
+  ],
+  "database": "C:\\Users\\Asus\\OneDrive\\\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\\Desktop\\serverless-event-driven-pipeline\\analytics\\pipeline.duckdb"
+}

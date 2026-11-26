@@ -1,0 +1,62 @@
+{
+  "baseline": {
+    "target": "baseline",
+    "url": "http://127.0.0.1:8000/events",
+    "run_id": "20260919T180325Z",
+    "seed": 20260919,
+    "count": 500,
+    "concurrency": 25,
+    "started_at": "2026-09-19T18:04:41.259683+00:00",
+    "ended_at": "2026-09-19T18:04:48.472514+00:00",
+    "elapsed_seconds": 7.056348,
+    "throughput_events_per_second": 70.858,
+    "success_count": 500,
+    "failure_count": 0,
+    "error_rate_percent": 0.0,
+    "p50_ms": 332.046,
+    "p95_ms": 487.148,
+    "p99_ms": 616.996,
+    "mean_ms": 337.294
+  },
+  "aws": {
+    "target": "aws",
+    "url": "https://v1qhyhexp5.execute-api.ap-south-1.amazonaws.com/events",
+    "run_id": "20260919T180325Z",
+    "seed": 20260919,
+    "count": 500,
+    "concurrency": 25,
+    "started_at": "2026-09-19T18:04:49.094952+00:00",
+    "ended_at": "2026-09-19T18:04:55.797628+00:00",
+    "elapsed_seconds": 6.594237,
+    "throughput_events_per_second": 72.942,
+    "success_count": 481,
+    "failure_count": 19,
+    "error_rate_percent": 3.8,
+    "p50_ms": 240.95,
+    "p95_ms": 806.259,
+    "p99_ms": 1123.331,
+    "mean_ms": 317.636
+  },
+  "delta": {
+    "throughput_events_per_second": {
+      "absolute": 2.083999999999989,
+      "percent_vs_baseline": 2.941093454514647
+    },
+    "error_rate_percent": {
+      "absolute": 3.8,
+      "percent_vs_baseline": null
+    },
+    "p50_ms": {
+      "absolute": -91.096,
+      "percent_vs_baseline": -27.434753016148367
+    },
+    "p95_ms": {
+      "absolute": 319.111,
+      "percent_vs_baseline": 65.5059653329173
+    },
+    "p99_ms": {
+      "absolute": 506.3349999999999,
+      "percent_vs_baseline": 82.06455147197063
+    }
+  }
+}

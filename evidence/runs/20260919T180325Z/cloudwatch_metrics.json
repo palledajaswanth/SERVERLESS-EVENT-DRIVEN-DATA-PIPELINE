@@ -1,0 +1,286 @@
+{
+  "start": "2026-09-19T17:17:38.807783+00:00",
+  "end": "2026-09-19T18:17:38.807783+00:00",
+  "functions": {
+    "serverless-event-pipeline-ingestion": {
+      "invocations": [
+        {
+          "Timestamp": "2026-09-19 23:30:00+05:30",
+          "Sum": 1.0,
+          "Unit": "Count"
+        },
+        {
+          "Timestamp": "2026-09-19 23:33:00+05:30",
+          "Sum": 20.0,
+          "Unit": "Count"
+        },
+        {
+          "Timestamp": "2026-09-19 23:34:00+05:30",
+          "Sum": 482.0,
+          "Unit": "Count"
+        },
+        {
+          "Timestamp": "2026-09-19 23:37:00+05:30",
+          "Sum": 1513.0,
+          "Unit": "Count"
+        },
+        {
+          "Timestamp": "2026-09-19 23:38:00+05:30",
+          "Sum": 1050.0,
+          "Unit": "Count"
+        },
+        {
+          "Timestamp": "2026-09-19 23:39:00+05:30",
+          "Sum": 219.0,
+          "Unit": "Count"
+        }
+      ],
+      "errors": [
+        {
+          "Timestamp": "2026-09-19 23:30:00+05:30",
+          "Sum": 0.0,
+          "Unit": "Count"
+        },
+        {
+          "Timestamp": "2026-09-19 23:33:00+05:30",
+          "Sum": 0.0,
+          "Unit": "Count"
+        },
+        {
+          "Timestamp": "2026-09-19 23:34:00+05:30",
+          "Sum": 0.0,
+          "Unit": "Count"
+        },
+        {
+          "Timestamp": "2026-09-19 23:37:00+05:30",
+          "Sum": 0.0,
+          "Unit": "Count"
+        },
+        {
+          "Timestamp": "2026-09-19 23:38:00+05:30",
+          "Sum": 0.0,
+          "Unit": "Count"
+        },
+        {
+          "Timestamp": "2026-09-19 23:39:00+05:30",
+          "Sum": 0.0,
+          "Unit": "Count"
+        }
+      ],
+      "duration_sum_ms": [
+        {
+          "Timestamp": "2026-09-19 23:30:00+05:30",
+          "Sum": 133.75,
+          "Unit": "Milliseconds"
+        },
+        {
+          "Timestamp": "2026-09-19 23:33:00+05:30",
+          "Sum": 846.4,
+          "Unit": "Milliseconds"
+        },
+        {
+          "Timestamp": "2026-09-19 23:34:00+05:30",
+          "Sum": 6598.479999499999,
+          "Unit": "Milliseconds"
+        },
+        {
+          "Timestamp": "2026-09-19 23:37:00+05:30",
+          "Sum": 18048.69999409997,
+          "Unit": "Milliseconds"
+        },
+        {
+          "Timestamp": "2026-09-19 23:38:00+05:30",
+          "Sum": 11850.59999720001,
+          "Unit": "Milliseconds"
+        },
+        {
+          "Timestamp": "2026-09-19 23:39:00+05:30",
+          "Sum": 2624.7299998000008,
+          "Unit": "Milliseconds"
+        }
+      ],
+      "duration_average_ms": [
+        {
+          "Timestamp": "2026-09-19 23:30:00+05:30",
+          "Average": 133.75,
+          "Unit": "Milliseconds"
+        },
+        {
+          "Timestamp": "2026-09-19 23:33:00+05:30",
+          "Average": 42.32,
+          "Unit": "Milliseconds"
+        },
+        {
+          "Timestamp": "2026-09-19 23:34:00+05:30",
+          "Average": 13.689792530082986,
+          "Unit": "Milliseconds"
+        },
+        {
+          "Timestamp": "2026-09-19 23:37:00+05:30",
+          "Average": 11.929081291539967,
+          "Unit": "Milliseconds"
+        },
+        {
+          "Timestamp": "2026-09-19 23:38:00+05:30",
+          "Average": 11.286285711619056,
+          "Unit": "Milliseconds"
+        },
+        {
+          "Timestamp": "2026-09-19 23:39:00+05:30",
+          "Average": 11.985068492237447,
+          "Unit": "Milliseconds"
+        }
+      ]
+    },
+    "serverless-event-pipeline-transformer": {
+      "invocations": [
+        {
+          "Timestamp": "2026-09-19 23:31:00+05:30",
+          "Sum": 1.0,
+          "Unit": "Count"
+        },
+        {
+          "Timestamp": "2026-09-19 23:33:00+05:30",
+          "Sum": 5.0,
+          "Unit": "Count"
+        },
+        {
+          "Timestamp": "2026-09-19 23:34:00+05:30",
+          "Sum": 48.0,
+          "Unit": "Count"
+        },
+        {
+          "Timestamp": "2026-09-19 23:35:00+05:30",
+          "Sum": 4.0,
+          "Unit": "Count"
+        },
+        {
+          "Timestamp": "2026-09-19 23:37:00+05:30",
+          "Sum": 204.0,
+          "Unit": "Count"
+        },
+        {
+          "Timestamp": "2026-09-19 23:38:00+05:30",
+          "Sum": 206.0,
+          "Unit": "Count"
+        },
+        {
+          "Timestamp": "2026-09-19 23:39:00+05:30",
+          "Sum": 76.0,
+          "Unit": "Count"
+        }
+      ],
+      "errors": [
+        {
+          "Timestamp": "2026-09-19 23:31:00+05:30",
+          "Sum": 0.0,
+          "Unit": "Count"
+        },
+        {
+          "Timestamp": "2026-09-19 23:33:00+05:30",
+          "Sum": 0.0,
+          "Unit": "Count"
+        },
+        {
+          "Timestamp": "2026-09-19 23:34:00+05:30",
+          "Sum": 0.0,
+          "Unit": "Count"
+        },
+        {
+          "Timestamp": "2026-09-19 23:35:00+05:30",
+          "Sum": 0.0,
+          "Unit": "Count"
+        },
+        {
+          "Timestamp": "2026-09-19 23:37:00+05:30",
+          "Sum": 0.0,
+          "Unit": "Count"
+        },
+        {
+          "Timestamp": "2026-09-19 23:38:00+05:30",
+          "Sum": 0.0,
+          "Unit": "Count"
+        },
+        {
+          "Timestamp": "2026-09-19 23:39:00+05:30",
+          "Sum": 0.0,
+          "Unit": "Count"
+        }
+      ],
+      "duration_sum_ms": [
+        {
+          "Timestamp": "2026-09-19 23:31:00+05:30",
+          "Sum": 255.31,
+          "Unit": "Milliseconds"
+        },
+        {
+          "Timestamp": "2026-09-19 23:33:00+05:30",
+          "Sum": 1940.8800000000003,
+          "Unit": "Milliseconds"
+        },
+        {
+          "Timestamp": "2026-09-19 23:34:00+05:30",
+          "Sum": 19072.839989,
+          "Unit": "Milliseconds"
+        },
+        {
+          "Timestamp": "2026-09-19 23:35:00+05:30",
+          "Sum": 1391.83,
+          "Unit": "Milliseconds"
+        },
+        {
+          "Timestamp": "2026-09-19 23:37:00+05:30",
+          "Sum": 61941.399977,
+          "Unit": "Milliseconds"
+        },
+        {
+          "Timestamp": "2026-09-19 23:38:00+05:30",
+          "Sum": 43970.16993899999,
+          "Unit": "Milliseconds"
+        },
+        {
+          "Timestamp": "2026-09-19 23:39:00+05:30",
+          "Sum": 9691.039996000001,
+          "Unit": "Milliseconds"
+        }
+      ],
+      "duration_average_ms": [
+        {
+          "Timestamp": "2026-09-19 23:31:00+05:30",
+          "Average": 255.31,
+          "Unit": "Milliseconds"
+        },
+        {
+          "Timestamp": "2026-09-19 23:33:00+05:30",
+          "Average": 388.17600000000004,
+          "Unit": "Milliseconds"
+        },
+        {
+          "Timestamp": "2026-09-19 23:34:00+05:30",
+          "Average": 397.35083310416667,
+          "Unit": "Milliseconds"
+        },
+        {
+          "Timestamp": "2026-09-19 23:35:00+05:30",
+          "Average": 347.9575,
+          "Unit": "Milliseconds"
+        },
+        {
+          "Timestamp": "2026-09-19 23:37:00+05:30",
+          "Average": 303.6343136127451,
+          "Unit": "Milliseconds"
+        },
+        {
+          "Timestamp": "2026-09-19 23:38:00+05:30",
+          "Average": 213.44742688834947,
+          "Unit": "Milliseconds"
+        },
+        {
+          "Timestamp": "2026-09-19 23:39:00+05:30",
+          "Average": 127.51368415789476,
+          "Unit": "Milliseconds"
+        }
+      ]
+    }
+  }
+}

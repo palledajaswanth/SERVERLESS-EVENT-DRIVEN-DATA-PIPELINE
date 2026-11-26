@@ -1,0 +1,66 @@
+{
+  "claims": [
+    {
+      "claim_id": "C-O2",
+      "claim": "Serverless ingestion accepts events through API Gateway and Lambda and durably queues them.",
+      "evidence_globs": [
+        "evidence/runs/*/aws_trace.csv",
+        "evidence/runs/*/cloudwatch_metrics.json"
+      ]
+    },
+    {
+      "claim_id": "C-O3",
+      "claim": "Queued events are validated, transformed, stored idempotently in S3, and indexed in DynamoDB.",
+      "evidence_globs": [
+        "evidence/runs/*/aws_summary.json",
+        "evidence/runs/*/negative_tests/nt-4.json",
+        "terraform/main.tf",
+        "lambdas/transformer/handler.py"
+      ]
+    },
+    {
+      "claim_id": "C-O4",
+      "claim": "Stored S3 events can regenerate DuckDB analytics and the Streamlit dashboard.",
+      "evidence_globs": [
+        "analytics/analytics_summary.json",
+        "analytics/pipeline.duckdb",
+        "dashboard/app.py"
+      ]
+    },
+    {
+      "claim_id": "C-KPI",
+      "claim": "Baseline and serverless performance is measured under a frozen deterministic workload.",
+      "evidence_globs": [
+        "evidence/runs/*/baseline_trace.csv",
+        "evidence/runs/*/aws_trace.csv",
+        "evidence/runs/*/comparison.json",
+        "config/project.json"
+      ]
+    },
+    {
+      "claim_id": "C-COST",
+      "claim": "Cost-per-event evidence separates measured runtime usage from captured pricing and modeled always-on baseline cost.",
+      "evidence_globs": [
+        "evidence/runs/*/cost_analysis.json",
+        "config/pricing_snapshot.json"
+      ]
+    },
+    {
+      "claim_id": "C-NT",
+      "claim": "Five negative tests retain fixture, expected-vs-observed, recovery, and residual-risk evidence.",
+      "evidence_globs": [
+        "evidence/runs/*/negative_tests/*.json"
+      ]
+    },
+    {
+      "claim_id": "C-REPRO",
+      "claim": "Infrastructure, workload, experiments and evidence are versionable and hash-manifested.",
+      "evidence_globs": [
+        "terraform/*.tf",
+        "workload/*.py",
+        "experiments/*.py",
+        "evidence/evidence_manifest.json"
+      ]
+    }
+  ]
+}

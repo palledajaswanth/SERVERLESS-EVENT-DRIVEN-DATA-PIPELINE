@@ -1,0 +1,1 @@
+{"event_id":"accept-20261029T174656Z-0014-625a8855f1","event_timestamp":"2026-10-29T17:47:32.843603+00:00","event_type":"cold-start","processed_at":"2026-10-29T17:47:56.189083+00:00","processor_request_id":"13981a2b-6c9d-5656-8500-7976e46dde3a","received_at":"2026-10-29T17:47:36.020375+00:00","schema_version":"1.0","source":"cold-start-experiment","value":14.0}

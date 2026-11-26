@@ -1,0 +1,1 @@
+{"event_id":"test-002","event_timestamp":"2026-10-29T17:32:32.8414934Z","event_type":"sensor","processed_at":"2026-10-29T17:32:56.908922+00:00","processor_request_id":"558b20f6-f6d6-5dc0-ad1c-43ab73b03a6c","received_at":"2026-10-29T17:32:36.047701+00:00","schema_version":"1.0","source":"simulator","value":50.0}

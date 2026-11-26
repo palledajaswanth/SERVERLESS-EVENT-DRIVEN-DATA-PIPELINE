@@ -1,0 +1,19 @@
+{
+  "target": "aws",
+  "url": "https://v1qhyhexp5.execute-api.ap-south-1.amazonaws.com/events",
+  "run_id": "20260919T180325Z-saturation-aws-c50",
+  "seed": 20260919,
+  "count": 500,
+  "concurrency": 50,
+  "started_at": "2026-09-19T18:08:06.817234+00:00",
+  "ended_at": "2026-09-19T18:08:33.667304+00:00",
+  "elapsed_seconds": 26.618398,
+  "throughput_events_per_second": 18.258,
+  "success_count": 486,
+  "failure_count": 14,
+  "error_rate_percent": 2.8,
+  "p50_ms": 1553.693,
+  "p95_ms": 8032.37,
+  "p99_ms": 12342.613,
+  "mean_ms": 2584.423
+}

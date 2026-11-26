@@ -1,0 +1,16 @@
+{
+  "test_id": "NT-1",
+  "executed_at": "2026-10-29T17:48:07.898433+00:00",
+  "fixture_id": "cold-start-accept-20261029T174656Z",
+  "precondition": "Ingestion Lambda configuration is changed before each request to force a fresh execution environment.",
+  "expected": "All 30 requests are accepted; latency evidence is retained; no silent state loss or duplicate object is introduced.",
+  "observed": {
+    "trials": 30,
+    "request_failures": 0,
+    "min_ms": 603.139,
+    "max_ms": 1258.568
+  },
+  "recovery": "Restore normal Lambda configuration nonce and continue queue processing; SQS provides durable buffering.",
+  "residual_risk": "API latency includes network/API Gateway overhead; CloudWatch Init Duration should be correlated for publication.",
+  "status": "PASS"
+}

@@ -1,0 +1,19 @@
+{
+  "test_id": "NT-3",
+  "executed_at": "2026-10-29T18:24:19.476182+00:00",
+  "fixture_id": "cost-scale-nt3-final-20261029",
+  "precondition": {
+    "events": 10000000,
+    "budget_usd": 50.0,
+    "pricing_snapshot": "config\\pricing_snapshot.json"
+  },
+  "expected": "A deliberately over-budget scale fixture is detected and blocked before execution.",
+  "observed": {
+    "projected_usd": 111.46669,
+    "guardrail_action": "BLOCK",
+    "normalized_usd_per_million_events": 11.146669
+  },
+  "recovery": "Reduce volume/concurrency, revise architecture or explicitly approve a higher budget before rerun.",
+  "residual_risk": "AWS tiering, free tier, data transfer and taxes may differ from the normalized pre-spend estimate.",
+  "status": "PASS"
+}

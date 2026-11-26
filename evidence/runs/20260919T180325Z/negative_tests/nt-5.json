@@ -1,0 +1,20 @@
+{
+  "test_id": "NT-5",
+  "executed_at": "2026-09-19T18:19:56.816275+00:00",
+  "fixture_id": "access-control-20260919T180325Z",
+  "precondition": "Attempt anonymous bucket access and inspect S3 public-access/encryption controls.",
+  "expected": "Public access is blocked, anonymous access is denied, and server-side encryption is configured.",
+  "observed": {
+    "public_access_block": {
+      "BlockPublicAcls": true,
+      "IgnorePublicAcls": true,
+      "BlockPublicPolicy": true,
+      "RestrictPublicBuckets": true
+    },
+    "anonymous_access_denied": true,
+    "encryption_configured": true
+  },
+  "recovery": "Terraform re-apply restores the declared bucket control state if drift is detected.",
+  "residual_risk": "This test does not replace an organization-wide IAM/access analyzer review.",
+  "status": "PASS"
+}

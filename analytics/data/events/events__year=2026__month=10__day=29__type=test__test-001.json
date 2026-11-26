@@ -1,0 +1,1 @@
+{"event_id":"test-001","event_timestamp":"2026-10-29T17:22:05.6932519Z","event_type":"test","processed_at":"2026-10-29T17:22:29.078800+00:00","processor_request_id":"c5fc9be2-4285-5bab-8733-f8bfc07fbfa5","received_at":"2026-10-29T17:22:08.272710+00:00","schema_version":"1.0","source":"simulator","value":100.0}
